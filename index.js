@@ -36,9 +36,9 @@ function game() {
   let playerScore = 0;
   let computerScore = 0;
 
-  while (playerScore != 3 && computerScore != 3) {
-    //   while (playerScore < 5 && computerScore < 5) {
-    // for (let i = 0; i < 5; i++) {
+  //   while (playerScore != 3 && computerScore != 3) {
+  //   while (playerScore < 5 && computerScore < 5) {
+  for (let i = 0; i < 5; i++) {
     let player = prompt("Rock, Paper, or Scissors?");
     let playerSelection = player.toLowerCase();
     let computerSelection = computerPlay();
@@ -68,6 +68,7 @@ function game() {
       } else if (result === "The input is not part of the game") {
         playerScore;
         computerScore;
+        i--;
       }
       console.log(result);
       console.log("Player score: " + playerScore);
