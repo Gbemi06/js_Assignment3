@@ -1,4 +1,4 @@
-alert("hello world"); // Hello World!
+alert("we are playing a rock/paper/scissors game");
 
 function computerPlay() {
   let computerSelection = Math.floor(Math.random() * 3);
