@@ -35,9 +35,6 @@ function playRound(playerSelection, computerSelection) {
 function game() {
   let playerScore = 0;
   let computerScore = 0;
-
-  //   while (playerScore != 3 && computerScore != 3) {
-  //   while (playerScore < 5 && computerScore < 5) {
   for (let i = 0; i < 5; i++) {
     let player = prompt("Rock, Paper, or Scissors?");
     let playerSelection = player.toLowerCase();
@@ -65,10 +62,6 @@ function game() {
       } else if (result === "It's a tie!") {
         playerScore;
         computerScore;
-      } else if (result === "The input is not part of the game") {
-        playerScore;
-        computerScore;
-        i--;
       }
       console.log(result);
       console.log("Player score: " + playerScore);
@@ -78,12 +71,6 @@ function game() {
       i--;
     }
   }
-  //   if (playerScore === 5) {
-  //     console.log("You win the game!");
-  //   } else if (computerScore === 5) {
-  //     console.log("You lose the game!");
-  //   }
-
   if (playerScore > computerScore) {
     console.log("You win the game!");
   } else if (playerScore < computerScore) {
