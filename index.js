@@ -72,6 +72,8 @@ function game() {
       console.log(result);
       console.log("Player score: " + playerScore);
       console.log("Computer score: " + computerScore);
+    } else {
+      alert("Please enter a valid input");
     }
   }
   //   if (playerScore === 5) {
