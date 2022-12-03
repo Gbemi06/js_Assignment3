@@ -66,6 +66,14 @@ function game() {
       console.log(result);
       console.log("Player score: " + playerScore);
       console.log("Computer score: " + computerScore);
+    } else if (playerSelection.includes(" ")) {
+      alert("there is a space at the beginning of your input");
+      i--;
+    } else if (playerSelection === "") {
+      alert(
+        "Please enter a word from the options before clicking OK or pressing enter"
+      );
+      i--;
     } else {
       console.log("The input is not part of the game");
       i--;
