@@ -73,6 +73,9 @@ function game() {
       console.log(result);
       console.log("Player score: " + playerScore);
       console.log("Computer score: " + computerScore);
+    } else {
+      console.log("The input is not part of the game");
+      i--;
     }
   }
   //   if (playerScore === 5) {
