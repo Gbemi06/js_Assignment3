@@ -4,8 +4,71 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="A simple, responsive, single page website template."
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, Responsive, Single Page, Template"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rock/Paper/Scissors</title>
   </head>
-  <body></body>
+  <body>
+    <header class="nav-class">
+      <h1>Rock/Paper/Scissors</h1>
+      <menu class="">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </menu>
+    </header>
+    <main class="container">
+      <section class="game__player">
+        <h2>Player</h3>
+        <div class="yourSelection">
+          <button id="rock-btn" class="selection" data-selection="rock">
+            Rock
+          </button>
+          <button id="paper-btn" class="selection" data-selection="paper">
+            Paper
+          </button>
+          <button id="scissors-btn" class="selection" data-selection="scissors">
+            Scissors
+          </button>
+        </div>
+    </section>
+    <section class="game__computer">
+        <h2>Computer</h3>
+        <div class="computerSelection">
+        </div>
+        </section>
+
+        <section class="game__play">
+        <div>
+          <button id="btn-replay">Play Again</button>
+        </div>
+        <div class="game__result">
+          <h3>Result</h3>
+          <div id="result">
+            <p>Player wins</p>
+          </div>
+        </div>
+
+        <aside class="game__score">
+          <h3>Score</h3>
+          <div class="game__score__text">
+            <p id="playerScore">Player: <span></span></p>
+            <p id="computerScore">Computer: <span></span></p>
+          </div>
+        </aside>
+
+        <div class="game__reset">
+          <button id="btn-reset">Reset</button>
+        </div>
+      </section>
+    </main>
+  </body>
   <script src="index.js" defer></script>
 </html>
